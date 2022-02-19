@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./images/favicon.png">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+  </style>
+
+  <style>
+
+    body {
+      background: url('./images/bg-pattern-desktop.svg'),
+      linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+      background-size: inherit;
+    }
+
+    @media only screen and (min-width: 375px ) and (max-width: 1023px) {
+      #hero-img {
+        content: url("./images/hero-mobile.jpg");
+      }
+    }
+    
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bgPalePink: 'hsl(0, 0%, 100%)',
+            bgDarkPink: 'hsl(0, 100%, 98%)',
+            palePink: 'hsl(0, 80%, 86%)',
+            darkPink: 'hsl(0, 74%, 74%)',
+            softRed: 'hsl(0, 93%, 68%)',
+            desaturatedRed: 'hsl(0, 36%, 70%, 50%)'
+          },
+          letterSpacing: {
+            widest: '.25em',
+          },
+          lineHeight: {
+            '12': '5rem',
+          },
+          width: {
+            '30' : '30rem'
+          }
+        }
+      }
+    }
+  </script>
+  <title> Base Apparel coming soon page </title>
+</head>
+<body style="font-family: 'Josefin Sans', sans-serif;">  
+  <main class="flex flex-col lg:flex-row-reverse items-center w-full my-20 lg:my-0">
+    <img id="hero-img" src="./images/hero-desktop.jpg" alt="hero-image" class="lg:w-9/12 lg:max-h-screen object-center object-cover">
+    <div>
+      <div class="text-center lg:text-left lg:flex flex-col gap-3 lg:ml-40 mt-12 lg:mt-0">
+        <img src="./images/logo.svg" alt="logo" class="absolute top-8 lg:top-12 left-10 lg:left-40 w-24 lg:w-36" >
+        <h3 style="color: hsl(0, 36%, 70%);" class="lg:w-1/2 text-4xl lg:text-7xl font-light tracking-widest lg:leading-12 "> WE'RE <br> <p style="color: hsl(0, 6%, 24%);" class="font-normal"> COMING SOON </p> </h3>
+        <p style="color: hsl(0, 36%, 70%);" class="ml-10 lg:ml-0 mt-6 w-3/4 lg:text-xl"> Hello fellow shoppers! We're currently building our new fashion store. 
+          Add your email below to stay up-to-date with announcements and our launch deals. 
+        </p>
+        <div style="border-color: hsl(0, 36%, 70%, 50%);" class="flex items-center justify-between border ml-7 lg:ml-0 rounded-full w-10/12 lg:w-30 pl-4 lg:pl-8 mt-8">
+          <input id="emailAddr" type="email" placeholder="Email Address" class="text-xs lg:text-base placeholder:text-desaturatedRed bg-transparent outline-none w-8/12">
+          <button style="box-shadow: 0 7px 20px hsl(0, 36%, 60%);" class="bg-gradient-to-r from-palePink to-darkPink w-16 lg:w-24 text-center items-center rounded-full py-3 outline-none" onclick="verify_email()"> <img id="icon" src="./images/icon-arrow.svg" alt="verify-buton" class="w-3 lg:w-4 relative left-7 lg:left-10"> </button>
+        </div>
+        <div class="relative">
+          <p style="color: hsl(0, 36%, 70%);" class="text-xs lg:text-base absolute ml-12 lg:ml-8 mt-3 lg:mt-1 hidden" id="message-poss"> Email added successfully! </p>
+          <div style="color: hsl(0, 36%, 70%);" id="message-neg" class="text-xs lg:text-base hidden absolute flex items-center gap-1 lg:gap-2 ml-12 lg:ml-8 mt-3 lg:mt-1">
+            <img src="./images/icon-error.svg" alt="error" class="opacity-50 relative lg:-top-0.5 w-3 lg:w-4">
+            <p> Invalid Email id </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+<script src="./script.js"></script>
+</html>
