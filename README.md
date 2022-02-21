@@ -24,5 +24,7 @@ Thanks for checking out this front-end coding challenge. This is the Live previe
 ## Find me elsewhere 📱
 
 [Instagram](https://www.instagram.com/_.ken__adams_/)
+
 [LinkedIn](https://www.linkedin.com/in/aravinth-vimal-1120581a7/)
+
 [Frontend Mentor](https://www.frontendmentor.io/profile/Aravinthvimal)
