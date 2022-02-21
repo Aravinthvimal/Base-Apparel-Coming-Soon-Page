@@ -16,7 +16,9 @@ Thanks for checking out this front-end coding challenge. This is the Live previe
 ## If you wanna 💡
 
 **Tip-off** you can surely ping me anytime [here](#find-me-elsewhere-%F0%9F%93%B1 "Goto Find me elsewhere 📱")
+
 **Create a clone** feel free to [fork](https://github.com/Aravinthvimal/Base-Apparel-Coming-Soon-Page) into or click on the challenge link.
+
 **Cherish** unfortunately you gotto go to the top again, and press the star button!
 
 ## Find me elsewhere 📱
